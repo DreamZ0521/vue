@@ -21,7 +21,7 @@
         <img src="static/img/学员管理/学籍管理/学院处分信息管理.png" class="image" height="150" width="150">
       </router-link>
 
-      <router-link :to="'/system/Dept'" class="d" >
+      <router-link :to="'/machine/xuejiguanli/xueyuanhuamingce'" class="d" >
         <img src="static/img/学员管理/学籍管理/学院花名册.png" class="image" height="150" width="150">
       </router-link>
     </div>

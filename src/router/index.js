@@ -122,6 +122,13 @@ import zhuanyebanci from '@/views/zhuanyebanciyilanbiao/zhuanyebanci';
 
 import zhuanyebancione from '@/views/zhuanyebanciyilanbiao/zhuanyebancione';
 
+//二级功能
+import xueyuanhuamingce  from '@/views/machine/xuejiguanli/xueyuanhuamingce';
+
+import daochuxueyuanshuju  from '@/views/machine/xuejiguanli/daochuxueyuanshuju';
+
+import xuejizhuce  from '@/views/machine/xuejiguanli/xuejizhuce';
+
 // 启用路由
 Vue.use( Router);
 
@@ -493,7 +500,32 @@ export default new Router({
             meta: {
               requireAuth: true
             }
-          }
+          },
+          {
+            path: '/machine/xuejiguanli/xueyuanhuamingce',
+            name: '学员花名册',
+            component: xueyuanhuamingce,
+            meta: {
+              requireAuth: true
+            }
+          },
+
+          {
+            path: '/machine/xuejiguanli/daochuxueyuanshuju',
+            name: '导出学员数据',
+            component: daochuxueyuanshuju,
+            meta: {
+              requireAuth: true
+            }
+          },
+          {
+            path: '/machine/xuejiguanli/xuejizhuce',
+            name: '导出学员数据',
+            component: xuejizhuce,
+            meta: {
+              requireAuth: true
+            }
+          },
         ]
     }]
 })
